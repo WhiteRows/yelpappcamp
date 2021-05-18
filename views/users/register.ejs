@@ -1,0 +1,39 @@
+<%= layout('layouts/boilerplate') %>
+    <link rel="stylesheet" href="stylesheets/register.css">
+
+    <div class="form-wrapper">
+        <div class="img-wrapper">
+
+        </div>
+
+        <form action="/register" method="POST" class="validated-form form" novalidate>
+            <h2>Register</h2>
+
+            <div class="mb-3">
+                <label class="form-label" for="username">Username</label>
+                <input class="form-control" type="text" id="username" name="username" required autofocus>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" type="email" id="email" name="email" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="password">Password</label>
+                <input class="form-control" type="text" id="password" name="password" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+
+            </div>
+
+            <button class="btn btn-success">Register</button>
+        </form>
+    </div>
